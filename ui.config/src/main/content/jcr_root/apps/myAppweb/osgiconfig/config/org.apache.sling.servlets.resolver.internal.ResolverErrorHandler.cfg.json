@@ -1,0 +1,5 @@
+{
+  "errorpages": [
+    "/apps/myapp/servlet/errorhandler/404.jsp"
+  ]
+}
