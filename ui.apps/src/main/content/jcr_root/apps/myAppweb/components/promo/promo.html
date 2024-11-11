@@ -1,0 +1,12 @@
+<div class="jumbotron" id="promo">
+    <h2 class="display-4">${properties.title}</h2>
+    <p>
+        <a class="btn btn-primary btn-lg" href="${properties.link}" role="button">${properties.ctaable}</a>
+    </p>
+    <h2 class="lead"></h2>
+    <h2>${properties.ctalabel}</h2>
+    <div class="cmp-promo__tile" data-sly-use.model="com.myapp.web.core.models.PromoModel">
+        <p>${model.promoTitle}!!!!!!!!!</p>
+    </div>
+    <div>${'promo.button.ctalabel' @ i18n }</div>
+</div>
