@@ -8,5 +8,8 @@
     <div class="cmp-promo__tile" data-sly-use.model="com.myapp.web.core.models.PromoModel">
         <p>${model.promoTitle}!!!!!!!!!</p>
     </div>
-    <div>${'promo.button.ctalabel' @ i18n }</div>
+    <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.all @ categories='myAppWeb.promo'}"/>
+    </sly>
+    <div class="cmp-promo__title_clientlibs" onclick="buttonClick()">${'promo.button.ctalabel' @ i18n }</div>
 </div>
